@@ -21,7 +21,7 @@ try {
     if (e.code === 'ECONNREFUSED') {
         
         // If the connection to Redis is refused (Redis server not running), attempt to start the Redis server using a shell command
-        var createserver = `sudo redis-server ./node-api/src/redis.conf`; // Define the shell command to start the Redis server
+        var createserver = `sudo redis-server ./src/redis.conf`; // Define the shell command to start the Redis server
 
         exec(createserver, async (error, stdout, stderr) => {
             if (error) {
