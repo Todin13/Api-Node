@@ -10,7 +10,8 @@ Redis: A fast, open-source, in-memory key-value data store.
 ## Installation and Setup
 Clone this repository to your local machine.\
 And run requirement.sh after you made it executable.\
-The required Node.js modules are already in the directory
+The required Node.js modules are already in the directory.\
+During the installation it may ask your password for sudo same during the start of the index.js
 
 ## API Endpoints
 ### GET /api
