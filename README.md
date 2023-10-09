@@ -5,11 +5,14 @@ This is a Node.js application that serves as a simple API for managing inventory
 Before running this application, you need to have the following software installed:
 
 Node.js: The JavaScript runtime for executing the application.
+
 Redis: A fast, open-source, in-memory key-value data store.
 
 ## Installation and Setup
 Clone this repository to your local machine.
+
 And run requirement.sh after you made it executable.
+
 The required Node.js modules are already in the directory
 
 ## API Endpoints
