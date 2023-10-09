@@ -6,9 +6,10 @@ Before running this application, you need to have the following software install
 
 Node.js: The JavaScript runtime for executing the application.
 Redis: A fast, open-source, in-memory key-value data store.
-Installation and Setup
-Clone this repository to your local machine.
 
+## Installation and Setup
+Clone this repository to your local machine.
+And run requirement.sh after you made it executable.
 The required Node.js modules are already in the directory
 
 ## API Endpoints
@@ -20,15 +21,15 @@ Example Response:
 	{
   		"inventory": [
   		{
-			"product": "Product1",
-			"count": "10",
-			"price": "50.00"
-    		},
-    		{
-      			"product": "Product2",
-      			"count": "5",
-      			"price": "25.00"
-    		}]
+		  "product": "Product1",
+		  "count": "10",
+		  "price": "50.00"
+		},
+		{
+      		  "product": "Product2",
+      		  "count": "5",
+  		  "price": "25.00"
+		}]
 	}
 	
 	
