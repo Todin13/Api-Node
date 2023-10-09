@@ -20,3 +20,17 @@ npm install -g npm@10.2.0
 node -v
 npm -v
 
+# Vérifier si Redis est déjà installé
+if ! command -v redis-server &> /dev/null 
+then
+    # Redis n'est pas installé, installer Redis
+    echo "Redis n'est pas installé. Installation en cours..."
+    curl -fsSL https://packages.redis.io/gpg | sudo gpg --dearmor -o /usr/share/keyrings/redis-archive-keyring.gpg
+    echo "deb [signed-by=/usr/share/keyrings/redis-archive-keyring.gpg] https://packages.redis.io/deb $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/redis.list
+    sudo apt update
+    sudo apt-get install redis
+    sudo apt-get install redis-server 
+else
+    # Redis est déjà installé
+    echo "Redis est déjà installé."
+fi
