@@ -28,7 +28,7 @@ This endpoint retrieves a list of items from the Redis set named 'inventory'. It
 
 Example Request:
 
-	curl -X GET http://localhost:8100
+	curl -X GET http://localhost:8100/api
 
 Attention the request musst be send from another terminal than the one were the app is running.\
 
